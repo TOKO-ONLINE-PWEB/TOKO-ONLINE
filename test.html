@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toysstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <style>
+      /* #search {
+        width: 500px;
+      } */
+      #back-a {
+        color: black;
+      }
+      #back {
+        transition: 500ms;
+      }
+
+      #back:hover {
+        width: 33px;
+        height: 33px;
+        transition: 500ms;
+      }
+      /* #search-2:hover {
+        float: right;
+        background-color: aqua;
+      } */
+
+      #form-search {
+        float: right;
+      }
+
+      #carouselExampleIndicators {
+        width: 50%;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent1"> -->
+      <form class="d-flex me-2" role="search" id="form-search" style="width: 100%">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search" />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <!-- </div> -->
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+          />
+        </svg>
+      </a>
+    </nav>
+
+    <!-- Awal Card -->
+    <section id="products" class="products bg-light mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="img/SPR_4.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detail-ak-47">Detail Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img src="img/SPR_4.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detail-ak-47">Detail Product</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Card -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="detail-ak-47" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" id="close-produk" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h3>Ak 47 Type 1</h3>
+            <br />
+            <img src="img/SPR_4.jpeg" style="width: 100%; height: 30%; object-fit: cover" alt="ak 47" />
+            <br />
+            <h6>Rp1.0220.000</h6>
+            <!-- <button type="submit" class="bg-dark mb-2"
+              style="color: white; width: 20%; border: 1px solid white; border-radius: 3px;" id="button-pembelian"
+              data-bs-toggle='modal' data-bs-target="#success">
+              buy
+            </button> -->
+            <br />
+            <h4 class="mb-3">AK 47 Kal.7.62x39mm</h4>
+            <p>
+              AK-47 (singkatan dari Avtomat Kalashnikova 1947, Rusia: Автомат Калашникова образца 1947 года) adalah senapan serbu yang dirancang oleh Mikhail Kalashnikov, diproduksi oleh pembuat senjata Rusia IZhMASh, dan digunakan oleh
+              banyak negara Blok Timur semasa Perang Dingin. Senapan ini diadopsi dan dijadikan senapan standar Uni Soviet pada tahun 1947.
+            </p>
+            <br />
+            <h4>Spesifications</h4>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">Length</th>
+                  <td>870 mm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Barrel</th>
+                  <td>415 mm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Effective Range</th>
+                  <td>300 m</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="modal-footer"></div>
+            <div class="mb-3">
+              <label for="select-quantity-pembelian" class="form-label"><b>Quantity</b></label>
+              <select id="select-quantity-pembelian" class="form-select">
+                <option>1</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+              </select>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="text-area-modal-pembelian" style="height: 100px"></textarea>
+              <label for="text-area-modal-pembelian">Your Address</label>
+            </div>
+            <div class="mbr-section-btn align-center text-left" id="buy-modal"><a class="btn btn-md btn-black-outline" style="border-color: black" id="buy-modal-a" data-bs-toggle="modal" data-bs-target="#success"> Buy</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal -->
+
+    <!-- Success Pembelian -->
+    <div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="mb-3">Purchase status :</h5>
+            <div id="success">
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </symbol>
+                <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                  />
+                </symbol>
+                <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </symbol>
+              </svg>
+              <div class="alert alert-success d-flex align-items-center" role="alert" style="width: 100%; height: 100%; object-fit: cover">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                  <use xlink:href="#check-circle-fill" />
+                </svg>
+                <div>Purchase Successful</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Success Pembelian -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
