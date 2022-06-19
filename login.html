@@ -31,20 +31,23 @@
             FEÚERARME
           </a>
           <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
-            <ul class="navbar-nav">  
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                </li>          
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html">Home</a>
                 </li>          
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Category
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="category1.html"  >Grenade Launcher</a></li>
-                      <li><a class="dropdown-item" href="category2.html"  >Pistols</a></li>
-                      <li><a class="dropdown-item" href="category3.html"  >Rifels</a></li>
-                      <li><a class="dropdown-item" href="category4.html"  >Shotguns</a></li>
-                      <li><a class="dropdown-item" href="category5.html"  >Sniper Rifels</a></li>
+                      <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#login">Grenade Launcher</a></li>
+                      <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#login">Pistols</a></li>
+                      <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#login">Rifels</a></li>
+                      <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#login">Shotguns</a></li>
+                      <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#login">Sniper Rifels</a></li>
                     </ul>
                 </li>
             </ul>
@@ -91,11 +94,10 @@
               These are the types of weapons sold in our shop :
             </p>
             <div class="d-grid gap-2 d-md-block ">
-              <a href="category1.html" class="btn btn-secondary">Grenade Launcher</a>
-              <a href="category2.html" class="btn btn-secondary">Pistols</a>
-              <a href="category3.html" class="btn btn-secondary">Rifels</a>
-              <a href="category4.html" class="btn btn-secondary">Shotguns</a>
-              <a href="category5.html" class="btn btn-secondary">Sniper Rifels</a>
+              <a href="#" class="btn btn-secondary">Grenade Launcher</a>
+              <a href="#" class="btn btn-secondary">Pistols</a>
+              <a href="#" class="btn btn-secondary">Shotguns</a>
+              <a href="#" class="btn btn-secondary">Sniper Rifels</a>
             </div>
           </div>
         </div>
@@ -151,6 +153,37 @@
     <!-- Copyright -->
   </footer>
 
+   <!-- Login -->
+   <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+   aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content" style="background-color: #222831; color:#EEEEEE;">
+        <div class="modal-header">
+            <h2 class="modal-title ms-auto mt-15" id="staticBackdropLabel">Login To FEÚERARME</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body mb-5">
+            <form name="formLogin">
+            <div class="mb-3">
+                <input type="text" style="background-color: #393E46; color: #EEEEEE; border:none" class="form-control"  name="username" id="text" aria-describedby="emailHelp"
+                placeholder="email/username/telepon">
+            </div>
+            <div class="mb-3">
+                <input type="password" style="background-color: #393E46; color: #EEEEEE; border:none" name="password" class="form-control" id="password" placeholder="password">
+            </div>
+            <div class="mb-3">
+                <input type="submit" style="background-color:#B55400; color:#000000; border:none" class="form-control" id="submit" value="Log In">
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=6285775942943&text=%20Password%20lal?" id="forget" style="text-decoration: none;">
+                Forget username or password ?
+            </a>
+            </form>
+        </div>
+        </div>
+    </div>
+    <!-- END Of Login -->
+
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- JS files: jQuery pertama, lalu Popper.js, selanjutnya Bootstrap JS, lalu Font Awesome JS-->
@@ -158,6 +191,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/206142bfe3.js" crossorigin="anonymous"></script>
-
+   
+    <!--login Script -->
+   <script>
+        const formLogin = document.forms["formLogin"];
+        formLogin.addEventListener("submit", (e) => {
+          e.preventDefault();
+  
+          const username = document.forms["formLogin"]["username"].value;
+          const password = document.forms["formLogin"]["password"].value;
+  
+          console.info(username);
+          console.info(password);
+  
+          if (username === "Kelompok4" && password === "fittoganteng") {
+            window.location = "home.html";
+          } else {
+            alert("password salah");
+            // document.forms["formLogin"].reset();
+          }
+  
+          document.forms["formLogin"].reset();
+        });
+    </script>
+    <!--END Of login Script -->
 </body>
 </html>
