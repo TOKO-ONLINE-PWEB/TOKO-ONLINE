@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEÚERARME - Shotguns</title>
+    <link rel="shortcut icon" href="./img/logo2.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        /* #search {
+          width: 500px;
+        } */
+        #back-a {
+          color: black;
+        }
+        #back {
+          transition: 500ms;
+        }
+  
+        #back:hover {
+          width: 33px;
+          height: 33px;
+          transition: 500ms;
+        }
+        /* #search-2:hover {
+          float: right;
+          background-color: aqua;
+        } */
+  
+        #form-search {
+          float: right;
+        }
+  
+        #carouselExampleIndicators {
+          width: 50%;
+          height: 50%;
+        }
+
+        .card {
+          transition: 500ms;
+          margin: 10px;
+          min-height: 390px;
+        }
+
+        .card:hover {
+          transition: 500ms;
+          box-shadow: rgba(50, 50, 93, 0.959) 0px 6px 12px -2px, rgb(0, 0, 0) 0px 3px 7px -3px;
+        }
+        #detail-product {
+          background-color: rgb(187, 186, 186);
+          color: white;
+          border: 1px solid #B55400;
+          float: right;
+          border-radius: 4px;
+          width: 100%;
+          transition: 1s;
+          
+        }
+        #detail-product:hover {
+          /* color: black; */
+          font-size: 17px;
+          text-decoration:dotted;
+          transition: 500ms;
+          border: 1px solid #974802;
+        }
+        .checked {
+          color: orange;
+        }
+    </style>
+    
+</head>
+<body style="background-color: #393E46;">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top shadow-m">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" height="50"> 
+            <img src="./img/logo2.png" class="rounded" alt="" width="50" height="50"/>
+            FEÚERARME
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="category1.html">Grenade Launcher</a></li>
+                        <li><a class="dropdown-item" href="category2.html">Pistols</a></li>
+                        <li><a class="dropdown-item" href="category3.html">Rifels</a></li>
+                        <li><a class="dropdown-item" href="category4.html">Shotguns</a></li>
+                        <li><a class="dropdown-item" href="category5.html">Sniper Rifels</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+            <form class="d-flex">
+              <div class="input-group rounded">
+                <input type="search" class="form-control border-0" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+    </nav>
+  <!--END Of Navbar-->
+
+  <!--Content-->
+  <!-- Background image -->
+  <!-- <div class="bg-image bg-cover bg-center mb-5" style="background-image: url(/img/category-img/Grenade-Launcher/SPG1-V2.jpg); height: 50vh"> -->
+    
+  </div>
+  <section id="products" class="products  mt-5"></section>
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="container mb-0 m-5">
+        <!-- <div class="card"> -->
+            <h5 class="card-title" style="font-family: 'Archivo Black', sans-serif; color:#B55400;">SHOTGUNS</h5>
+        <!-- </div> -->
+    </div>
+  </div>
+<!-- Background image -->
+    <div class="container pt-3">
+        <span style="color:beige;">
+            <a href="home.html">Home</a>
+            »
+            <span class="breadcrumb_last" aria-current="page">Category 4 - Shotguns</span>
+        </span>
+    </div>
+
+     <!-- Awal Card -->
+        <div class="container">
+          <div class="row">
+            <!--Category1 - Path1 -->
+            <div class="col-md-4">
+              <div class="card" id="card-1" style="width: 18rem; transition: 1s; background-color: #222831; color:#EEEEEE;">
+                <img src="img/category-img/Shotguns/SG-1-alt.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style="float:left;">SG-1</h5> &nbsp; &nbsp;
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <table class="table">
+                    <tbody style="color:#EEEEEE;">
+                      <tr>
+                        <th scope="row">Length</th>
+                        <td>560 mm</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Effective Range</th>
+                        <td>100 m</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" id="detail-product" class="btn" data-bs-toggle="modal" data-bs-target="#detail-1" style="background-color:#B55400; color:#000000;">Detail Product</a>
+                </div>
+              </div>
+            </div>
+            <!--END Of Category1 - Path1 -->
+
+            <!--Category1 - Path2 -->
+            <div class="col">
+              <div class="card" style="width: 18rem; background-color: #222831; color:#EEEEEE;">
+                <img src="/img/category-img/Rifles/SS2_V7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style="float:left;">SS2-V7</h5> &nbsp; &nbsp;
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <table class="table">
+                    <tbody style="color:#EEEEEE;">
+                      <tr>
+                        <th scope="row">Length</th>
+                        <td>713 mm</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Barrel </th>
+                        <td>200 mm</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Effective Range</th>
+                        <td>150 m</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" id="detail-product" class="btn" data-bs-toggle="modal" data-bs-target="#detail-2" style="background-color:#B55400; color:#000000;" >Detail Product</a>
+                </div>
+              </div>
+            </div>
+            <!--END Of Category1 - Path2 -->
+
+            <!--Category1 - Path3 -->
+            <div class="col">
+                <div class="card" style="width: 18rem; background-color: #222831; color:#EEEEEE;">
+                  <img src="/img/category-img/Rifles/SS3.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title" style="float:left;">SS3</h5> &nbsp; &nbsp;
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <table class="table">
+                      <tbody style="color:#EEEEEE;">
+                        <tr>
+                          <th scope="row">Length</th>
+                          <td>836 mm</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Barrel</th>
+                          <td>500 mm</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Effective Range</th>
+                          <td><ul>
+                                <li>400 m (mechanical)</li>
+                                <li>800 m (optical)</li>
+                            </ul>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a href="#"  id="detail-product" class="btn" data-bs-toggle="modal" data-bs-target="#detail-3" style="background-color:#B55400; color:#000000;">Detail Product</a>
+                  </div>
+                </div>
+            </div>
+            <!--END Of Category1 - Path3 -->
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Card -->
+  
+      <!-- Modal -->
+      <!--Category3 - Path1-->
+      <div class="modal fade" id="detail-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content" style="background-color: #222831; color:#EEEEEE;">
+            <div class="modal-body">
+              <button type="button"  class="btn-close btn-light" id="close-produk" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h3>SG-1 12 GAUGE</h3>
+              <br />
+              <img src="/img/category-img/Shotguns/SG-1-alt.jpg" style="width: 100%; height: 30%; object-fit: cover; border-radius: 4px;" alt="ak 47" />
+              <br> <br>
+              <h6>Rp1.0220.000</h6>
+              <!-- <button type="submit" class="bg-dark mb-2"
+                style="color: white; width: 20%; border: 1px solid white; border-radius: 3px;" id="button-pembelian"
+                data-bs-toggle='modal' data-bs-target="#success">
+                buy
+              </button> -->
+              <br />
+              <h4 class="mb-3">SG-1 12 GAUGE</h4>
+              <p>
+                This rifle uses a barrel with a length of 564 mm and weighs 3.05 kilograms. 
+                The butt made of Walnut wood enhances beauty and comfort in use. 
+                With a gas operated mechanism, this rifle can fire a variety of munitions from conventional munitions, rubber, to slug. 
+                This rifle has a 4+1 bullet capacity.
+              </p>
+              <br />
+              <h4>Spesifications</h4>
+              <table class="table">
+                <tbody style=" color:#EEEEEE;">
+                  <tr>
+                    <th scope="row">Length</th>
+                    <td>560 mm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Effective Range</th>
+                    <td>100 m</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+              <div class="modal-footer"></div>
+              <div class="mb-3">
+                <label for="select-quantity-pembelian" class="form-label"><b>Quantity</b></label>
+                <select id="select-quantity-pembelian" class="form-select">
+                  <option>1</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="text-area-modal-pembelian" style="height: 100px"></textarea>
+                <label for="text-area-modal-pembelian" style="color:#000000;">Your Address</label>
+              </div>
+              <div class="mbr-section-btn align-center text-left" id="buy-modal"><a class="btn btn-md btn-success" style="border-color: green;" id="buy-modal-a" data-bs-toggle="modal" data-bs-target="#success"> Buy</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Category1 - Path1-->
+
+      <!--Category1 - Path2-->
+      <div class="modal fade" id="detail-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content"  style="background-color: #222831; color:#EEEEEE;">
+            <div class="modal-body">
+              <button type="button" class="btn-close btn-light" id="close-produk" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h3>SS2-V7 Subsonic</h3>
+              <br>
+              <img src="/img/category-img/Rifles/SS2_V7.png" style="width: 100%; height: 30%; object-fit: cover; border-radius: 4px;" alt="ak 47" />
+              <br> <br>
+              <h6>Rp1.0220.000</h6>
+              <!-- <button type="submit" class="bg-dark mb-2"
+                style="color: white; width: 20%; border: 1px solid white; border-radius: 3px;" id="button-pembelian"
+                data-bs-toggle='modal' data-bs-target="#success">
+                buy
+              </button> -->
+              <br />
+              <h4 class="mb-3">SS2-V7 Subsonic</h4>
+              <p>
+                The latest variant of the SS2 line-up. 
+                The SS2-V7 Subsonic has the ability to fire munitions in silence. 
+                This capability is supported by the use of silencers on the front of the weapon to drown out the loud sound that comes out when munitions are fired. 
+                The silent firing capability of the SS2-V7 can be increased by the use of special subsonic type munitions which have an effective firing range of up to 150 meters. 
+                The ACOG telescope is standard on this variant.
+              </p>
+              <br />
+              <h4>Spesifications</h4>
+              <table class="table">
+                <tbody  style="color:#EEEEEE;">
+                  <tr>
+                    <th scope="row">Length</th>
+                    <td>713 mm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Barrel</th>
+                    <td>200 m</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Effective Range</th>
+                    <td>150 m</td>
+                  </tr>
+                </tbody>
+              </table>
+  
+              <div class="modal-footer"></div>
+              <div class="mb-3">
+                <label for="select-quantity-pembelian" class="form-label"><b>Quantity</b></label>
+                <select id="select-quantity-pembelian" class="form-select">
+                  <option>1</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="text-area-modal-pembelian" style="height: 100px"></textarea>
+                <label for="text-area-modal-pembelian" style="color: black">Your Address</label>
+              </div>
+              <div class="mbr-section-btn align-center text-left" id="buy-modal"><a class="btn btn-md btn-success" style="border-color: green" id="buy-modal-a" data-bs-toggle="modal" data-bs-target="#success"> Buy</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Of Category1 - Path2-->
+
+      <!--Category1 - Path3 -->
+      <div class="modal fade" id="detail-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content" style="background-color: #222831; color:#EEEEEE;">
+            <div class="modal-body">
+              <button type="button" class="btn-close btn-light" id="close-produk" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h3>SS3</h3>
+              <br />
+              <img src="/img/category-img/Rifles/SS3.png" style="width: 100%; height: 30%; object-fit: cover; border-radius: 4px;" alt="ak 47" />
+              <br> <br>
+              <h6>Rp1.0220.000</h6>
+              <!-- <button type="submit" class="bg-dark mb-2"
+                style="color: white; width: 20%; border: 1px solid white; border-radius: 3px;" id="button-pembelian"
+                data-bs-toggle='modal' data-bs-target="#success">
+                buy
+              </button> -->
+              <br />
+              <h4 class="mb-3">SS3</h4>
+              <p>
+                SS3 is designed to be a Main Battle Rifle in reliable combat in various battle scenarios. 
+                With a barrel length of 500 mm, the SS3 has an effective firing range of 400 meters using a gun and 800 meters using a gun optics. 
+                The gas operated mechanism is retained in this variant, which is combined with a magazine with a capacity of 20 rounds.
+              </p>
+              <br />
+              <h4>Spesifications</h4>
+              <table class="table">
+                <tbody style="color:#EEEEEE;">
+                  <tr>
+                    <th scope="row">Length</th>
+                    <td>836 mm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Barrel</th>
+                    <td>500 mm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Effective Range</th>
+                    <td>
+                        <ul>
+                            <li>400 m (mechanical)</li>
+                            <li>800 m (optical)</li>
+                        </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+  
+              <div class="modal-footer"></div>
+              <div class="mb-3">
+                <label for="select-quantity-pembelian" class="form-label"><b>Quantity</b></label>
+                <select id="select-quantity-pembelian" class="form-select">
+                  <option>1</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="text-area-modal-pembelian" style="height: 100px"></textarea>
+                <label for="text-area-modal-pembelian" style="color:#000000;">Your Address</label>
+              </div>
+              <div class="mbr-section-btn align-center text-left" id="buy-modal"><a class="btn btn-md btn-success" style="border-color: green" id="buy-modal-a" data-bs-toggle="modal" data-bs-target="#success"> Buy</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Of Category1 - Path3 -->
+      <!-- Akhir Modal -->
+  
+      <!-- Success Pembelian -->
+      <div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content"  style="background-color: #222831; color:#EEEEEE;">
+            <div class="modal-body">
+              <h5 class="mb-3">Purchase status :</h5>
+              <div id="success">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                  </symbol>
+                  <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                    />
+                  </symbol>
+                  <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                    />
+                  </symbol>
+                </svg>
+                <div class="alert alert-success d-flex align-items-center" role="alert" style="width: 100%; height: 100%; object-fit: cover">
+                  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                    <use xlink:href="#check-circle-fill" />
+                  </svg>
+                  <div>Purchase Successful</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Success Pembelian -->
+  <!--END Of Content-->
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <!--
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   -->
+   <!-- JS files: jQuery pertama, lalu Popper.js, selanjutnya Bootstrap JS, lalu Font Awesome JS-->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/206142bfe3.js" crossorigin="anonymous"></script>
+</body>
+</html>
